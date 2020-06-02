@@ -1,0 +1,156 @@
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: -webkit-linear-gradient(-180deg, rgb(0, 177, 255), rgb(0, 89, 128));
+    background: linear-gradient(-180deg, rgb(0, 177, 255), rgb(0, 89, 128));
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.register-form {
+    width: 50%;
+    margin: 0 auto;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    -moz-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.register-form label {
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#ar-btn {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 1.4rem;
+    font-family: "Amiri", Arial, "Times New Roman", sans-serif;
+    text-align: right;
+}
+
+#ar-btn span {
+    margin-left: 1rem;
+    font-size: 2rem;
+}
+
+#en-btn {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    font-size: 1.4rem;
+    font-family: "Nunito", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: left;
+}
+
+#en-btn span {
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+#ar-btn:hover,
+#en-btn:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#ar-btn:focus,
+#en-btn:focus {
+    background-color: rgba(0, 255, 0, 0.3);
+}
+
+.icon-button {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    display: table;
+    padding: 0px 10px;
+    margin-bottom: 1rem;
+}
+
+.icon-button span {
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+    width: 24px;
+    margin-left: 10px;
+}
+
+.icon-button input,
+.icon-button input:focus {
+    width: 100%;
+    margin-bottom: 0px;
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Nunito", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.icon-button input::placeholder {
+    opacity: 1;
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Nunito", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#eye_show,
+#eye_show_2 {
+    display: table-cell;
+    cursor: pointer;
+}
+
+#eye_hide,
+#eye_hide_2 {
+    display: none;
+    cursor: pointer;
+}
+
+.nextBtn {
+    color: white;
+    background-color: transparent;
+    border-color: white;
+    margin-top: 2rem;
+    font-family: "Nunito", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    transition: all .5s;
+}
+
+.nextBtn:hover {
+    color: hsl(194, 75%, 41%);
+    background-color: white;
+    border-color: white;
+    transition: all .5s;
+}
+
+.nextBtn:focus,
+.nextBtn:active {
+    color: hsl(194, 75%, 41%);
+    background-color: hsl(0, 0%, 80%);
+    border-color: hsl(0, 0%, 80%);
+}
+
+.div_show {
+    opacity: 1;
+    visibility: visible;
+    transition: visibility 0s, opacity 0.4s ease-out;
+}
+
+.div_hide {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s, opacity 0.4s ease-in;
+}

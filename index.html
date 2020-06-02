@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <meta name="author" content="Salman Hasan">
+    <meta name="description" content="Register Page">
+
+    <!-- FONTS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+
+    <!-- ICONS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+
+    <link rel="stylesheet" href="css/register.css">
+
+</head>
+
+<body>
+    <header>
+        <h1>Registration</h1>
+    </header>
+    <main>
+        <!-- Customer Registration Form
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <form class="register-form" id="customer-signup">
+            <div class="div_show" id="div1" style="display: block;">
+                <h3 class="title">Language</h3>
+                <button class="u-full-width button-primary" type="button" id="ar-btn">
+                    العربية<span class="flag-icon flag-icon-sa"></span>
+                </button>
+                <button class="u-full-width button-primary" type="button" id="en-btn">
+                    <span class="flag-icon flag-icon-us"></span>English
+                </button>
+                <button class="nextBtn u-full-width" type="button" id="nextBtn">Next</button>
+            </div>
+            <div class="div_hide" id="div2" style="display: none;">
+                <h3 class="title">Account</h3>
+                <div class="icon-button u-full-width">
+                    <span class="material-icons">perm_identity</span>
+                    <input type="text" name="username" class="u-full-width" placeholder="Username">
+                </div>
+                <div class="icon-button u-full-width">
+                    <span class="material-icons">email</span>
+                    <input type="email" name="email" class="u-full-width" placeholder="Email">
+                </div>
+                <div class="icon-button u-full-width">
+                    <span class="material-icons">lock</span>
+                    <input type="password" name="password" class="u-full-width" placeholder="Password" id="pswdBox">
+                    <span class="material-icons" id="eye_show">visibility</span>
+                    <span class="material-icons" id="eye_hide">visibility_off</span>
+                </div>
+                <button class="nextBtn u-full-width" type="button" id="submitBtn">Create Account</button>
+            </div>
+        </form>
+
+        <!-- Administrator Sign-in Form
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <form class="register-form" id="admin-login" style="display: none;">
+            <h3 class="title">Sign-in Administrator</h3>
+            <div class="icon-button u-full-width">
+                <span class="material-icons">email</span>
+                <input type="email" name="email" class="u-full-width" placeholder="Email">
+            </div>
+            <div class="icon-button u-full-width">
+                <span class="material-icons">lock</span>
+                <input type="password" name="password" class="u-full-width" placeholder="Password" id="pswdBox2">
+                <span class="material-icons" id="eye_show_2">visibility</span>
+                <span class="material-icons" id="eye_hide_2">visibility_off</span>
+            </div>
+            <button class="nextBtn u-full-width" type="button" id="loginBtn">Login</button>
+        </form>
+    </main>
+
+    <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="js/register.js"></script>
+</body>
+
+</html>
