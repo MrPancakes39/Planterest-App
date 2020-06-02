@@ -1,0 +1,5 @@
+# If you would like to report a security issue
+# you may report it to us through the following email.
+Contact: salmannhassan39@gmail.com
+Acknowledgments: https://example.com/app/thanks
+Preferred-Languages: en, fr, ar
