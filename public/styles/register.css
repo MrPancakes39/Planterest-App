@@ -11,7 +11,7 @@ body {
 header h1 {
     color: white;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 6rem;
 }
 
 .title {
@@ -21,7 +21,7 @@ header h1 {
 }
 
 .register-form {
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     left: 50%;
     top: 50%;
