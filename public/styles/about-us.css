@@ -1,0 +1,125 @@
+html {
+    margin-left: 75px;
+}
+
+body {
+    background-color: #F7F7F7;
+    font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.menu {
+    width: 75px;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    background-color: #96c73d;
+    border-color: #96c73d;
+    border-radius: 0px 34px;
+    display: table;
+}
+
+.menu__item {
+    line-height: 1;
+    display: table-row;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu__item p {
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    font-size: 1.3rem;
+}
+
+.menu__item svg {
+    width: 32px;
+    height: 32px;
+    fill: #ffffff;
+}
+
+.menu__item.active div {
+    background-color: #F7F7F7;
+    border-color: #F7F7F7;
+    border-radius: 30px 0px 0px 30px;
+    margin-left: 0.5rem;
+    padding: 0.5rem 0rem;
+}
+
+.menu__item.active div svg {
+    fill: #96c73d;
+}
+
+.menu__item.active div p {
+    color: #96c73d;
+}
+
+.stroke {
+    stroke: #ffffff;
+}
+
+.stroke.active {
+    fill: #96c73d;
+}
+
+.custom-button {
+    color: white;
+    outline: #96C73D;
+    background: #96C73D;
+    border-color: #96C73D;
+    border-radius: 0px 18px;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.custom-button:hover,
+.custom-button:focus {
+    color: white;
+    outline: #80AA33;
+    background: #80AA33;
+    border-color: #80AA33;
+}
+
+.custom-button.big {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.container {
+    text-align: center;
+}
+
+.container p {
+    text-align: left;
+}
+
+.container img,
+.container button {
+    width: 70%;
+}
+
+#leaf-3 {
+    height: 23.6%;
+    top: 100%;
+    left: 100%;
+    position: fixed;
+    -webkit-transform: translate3d(-100%, -100%, 0);
+    -moz-transform: translate3d(-100%, -100%, 0);
+    transform: translate3d(-100%, -100%, 0);
+}
+
+main {
+    margin: 0rem 1.5rem;
+}
+
+.center {
+    top: 50%;
+    position: fixed;
+    -webkit-transform: translate3d(0, -50%, 0);
+    -moz-transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, -50%, 0);
+}
