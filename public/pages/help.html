@@ -4,40 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Help Page</title>
     <meta name="author" content="Salman Hasan">
-    <meta name="description" content="About Us">
+    <meta name="description" content="Help Page">
 
     <!-- FONTS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <!-- CSS
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="../styles/skeleton.css">
 
-    <link rel="stylesheet" href="../styles/about-us.css">
+    <link rel="stylesheet" href="../styles/help.css">
 </head>
 
 <body>
-    <img src="assets/images/leaf-3.svg" id="leaf-3">
-
     <nav class="menu">
         <div class="menu__item" style="height: 25px;"></div>
-        <a href="./about-us.html" class="menu__item active noSelect">
+        <a href="./about-us.html" class="menu__item noSelect">
+            <svg>
+                <use xlink:href="assets/icons/about-us.svg#g860"></use>
+            </svg>
+            <p>About Us</p>
+        </a>
+        <a href="./help.html" class="menu__item active noSelect">
             <div>
                 <svg>
-                    <use xlink:href="assets/icons/about-us.svg#g860"></use>
+                    <use xlink:href="assets/icons/help.svg#g844"></use>
                 </svg>
-                <p>About Us</p>
+                <p>Help</p>
             </div>
-        </a>
-        <a href="./help.html" class="menu__item noSelect">
-            <svg>
-                <use xlink:href="assets/icons/help.svg#g844"></use>
-            </svg>
-            <p>Help</p>
         </a>
         <a href="./about-us.html" class="menu__item noSelect">
             <svg>
@@ -59,19 +57,31 @@
         </a>
     </nav>
 
-    <main class="center">
+    <main class="u-full-width center">
         <div class="u-full-width container">
-            <img src="assets/images/care.png">
-            <p>Taking care of agriculture is one of the things people must do
-                and never regret, it’s our environment and OUR responsibility. <strong>Planterest</strong> is an
-                agriculture app that is made to help all people in
-                many different manners as well as it helps the environment vastly. This application provides information
-                about farming for people interested, job offers for agricultural engineers (customers hire them), and
-                also several sites for donations.
-            </p>
-            <button class="custom-button big" onclick="location.href = './help.html'">HELP</button>
+            <form class="form">
+                <div class="icon-button u-full-width">
+                    <input type="text" name="first-name" placeholder="Name">
+                    <hr>
+                </div>
+                <div class="icon-button u-full-width">
+                    <input type="text" name="last-name" placeholder="Family Name">
+                    <hr>
+                </div>
+                <div class="icon-button u-full-width">
+                    <input type="tel" name="number" placeholder="Phone Number">
+                    <hr>
+                </div>
+                <div class="icon-button u-full-width" style="margin-bottom: 5rem;">
+                    <input type="text" name="needs" placeholder="Kind of Needs">
+                    <hr>
+                </div>
+                <button class="u-full-width custom-button">Submit</button>
+            </form>
         </div>
     </main>
+
+    <script src="../scripts/help.js"></script>
 
     <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->

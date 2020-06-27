@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Requests</title>
+    <meta name="author" content="Salman Hasan">
+    <meta name="description" content="Help Requests">
+
+    <!-- FONTS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="../styles/skeleton.css">
+
+    <style>
+        body {
+            background-color: #F4F4F4;
+            font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        body div {
+            margin-bottom: 1rem;
+        }
+
+        body div p,
+        body div h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        body div h4 {
+            color: #80AA33;
+        }
+    </style>
+
+    <script>
+        async function getReqs() {
+            let response = await fetch("/help-request");
+            let data = await response.json();
+            makeReqs(data);
+        }
+
+        function makeReqs(reqs) {
+            reqs.forEach(req => {
+                let div = document.createElement("div");
+                let title = document.createElement("h4");
+                let content = document.createElement("div");
+
+                let p1 = document.createElement("p");
+                let p2 = document.createElement("p");
+
+                title.textContent = `[${req["first_name"]} ${req["last_name"]}]`;
+                p1.textContent = `Phone: ${req["number"]}`;
+                p2.textContent = `Need: ${req["needs"]}`;
+
+                content.append(p1, p2);
+                div.append(title, content);
+                document.body.appendChild(div);
+            });
+        }
+
+        getReqs();
+    </script>
+
+</head>
+
+<body>
+</body>
+
+</html>
