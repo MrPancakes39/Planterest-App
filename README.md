@@ -1,4 +1,4 @@
-# Planterest App
+# Planterest App [Discontinued]
 Planterest is an agricultural app made to help all people by providing a bunch of services.
 - In this application you can request any agricultural material you need.
 - On the otherside, you can provide support by going to the donation page.
